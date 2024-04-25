@@ -3,16 +3,16 @@ export default function SearchBar() {
     const options = ['Casa', 'Departamento', 'Finca', 'Terreno', 'Oficina', 'Local Comercial', 'Galpón'];
 
     return (
-        <section id="search-bar" className="flex justify-center py-4">
-            <div className="border border-black rounded-md p-2  max-w-xl">
+        <section id="search-bar" className="relative justify-center z-10 text-lg -ml-4 ">
+            <div className="border border-black rounded-xl py-4 px-6  bg-gray-300 bg-opacity-80 backdrop-blur-lg">
                 <div >
-                    <ul className="flex flex-row relative left-1/4 pb-2 ">
-                        <li className="-ml-32 px-2 mr-2 border border-black rounded-md hover:bg-sky-100">Alquilar</li>
-                        <li className="px-2 border border-black rounded-md hover:bg-sky-100">Comprar</li>
+                    <ul className="flex flex-row pb-2 ">
+                        <li className="py-1 px-2 mr-2  bg-sky-200 border border-black rounded-md hover:font-medium hover:underline">Alquilar</li>
+                        <li className="px-2 py-1 bg-sky-200 border border-black rounded-md hover:font-medium hover:underline">Comprar</li>
                     </ul>
                 </div>
                 <div className="flex flex-row justify-center">
-                    <form className="py-1 border border-black mr-4 rounded-md px-2">
+                    <form className="py-1 px-2 bg-sky-200 border border-black mr-4 rounded-md">
                         <label className="relative">
                             <input type="checkbox" className="hidden peer" />
 
@@ -36,8 +36,8 @@ export default function SearchBar() {
                             </div>
                         </label>
                     </form>
-                    <input type="text" placeholder="Ubicacion o caracteristicas" className="border border-black rounded-md  py-1 px-2 mx-2" />
-                    <button className="border border-black rounded-md py-1 px-2">Buscar</button>
+                    <input type="text" placeholder="Ubicacion o caracteristicas" className="border border-black rounded-md  py-1 px-2 mr-2" />
+                    <button className="border border-black rounded-md py-1 px-2 bg-sky-200 hover:font-medium hover:underline">Buscar</button>
                 </div>
             </div>
         </section >
