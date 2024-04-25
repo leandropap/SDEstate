@@ -3,34 +3,44 @@ import Image from "next/image"
 export default function Testimonials() {
     const data = [
         {
-            name: 'María',
-            src: 'https://casaz.vercel.app/agents/agent-2.jpeg',
-            text: 'Pude encontrar el departamento que tanto buscaba, SDEstatefue mi guía en todo momento.',
+            name: 'Emir Dalale',
+            company: 'MercaLibre',
+            src: 'https://casaz.vercel.app/agents/agent-4.jpeg',
+            text: 'Gracias a SDEstate, mi primera mudanza fuera de casa fue muy simple. Me ofrecieron un gran abanico de opciones, y encontre el lugar indicado para mi',
         },
         {
-            name: 'Juan',
+            name: 'Eduardo Vizcarra',
+            company: 'Sea & 1A LTD',
             src: 'https://casaz.vercel.app/agents/agent-3.jpeg',
-            text: 'Antes, cobrar mis alquileres era muy complicado. Hoy por hoy, SDEstate gestiona mis propiedades y gano muchisimo tiempo libre'
+            text: 'Antes cobrarlos alquileres de mis propiedades era muy complicado. Hoy por hoy, SDEstate se encarga de la gestion y asi yo puedo disfrutar de mi  tiempo libre'
         },
         {
-            name: 'José',
+            name: 'Gonzalo Umlandt',
+            company: 'Es Ketchup',
             src: 'https://t4.ftcdn.net/jpg/01/27/97/23/360_F_127972340_IdaSXaA5FRMHpwtANA2FZfqnnATi8leG.jpg',
-            text: 'Planeaba mudarme una vez que me jubile y SDEstate fue crucial tanto para la compra como para la venta de ambas propiedades'
+            text: 'Desde hace mucho tiempo, planeaba mudarme una vez que me jubile y SDEstate fue crucial tanto para la compra como para la venta de ambas propiedades'
         }
     ]
 
     return (
-        <section id='testimonials' className="py-2 px-4">
-            <div>Testimonios de usuarios</div>
-            <div className="flex flex-row justify-around">
+        <section id='testimonials' className="py-16 px-4 bg-sky-50">
+            <div className="text-center pb-16">
+                <h1 className="text-4xl font-medium pb-4">Qué opinan nuestros clientes</h1>
+                <h1 className="text-xl font-light ">Algunas de sus historias</h1>
+            </div>
+            <div className="flex flex-row justify-evenly">
                 {data.map(e => {
                     return (
-                        <div className="border border-gray-400 p-2 max-w-sm">
-                            <div className="relative py-48 rounded-full overflow-hidden ">
+                        <div className="border border-gray-400 rounded-xl mx-8 max-w-sm bg-white">
+                            <p className="text-justify text-xl px-4 py-2">"{e.text}"</p>
+                            <div className="relative center mx-4 py-16 rounded-full overflow-hidden  max-w-32">
                                 <Image loader={() => e.src} src={e.src} alt={e.name} fill={true} style={{ objectFit: "cover" }} />
                             </div>
-                            <p className=" text-2xl relative left-12 font-medium">{e.name}</p>
-                            <p className="text-justify ">"{e.text}</p>
+                            <div className="relative mx-4 -top-20 left-36 ">
+                                <p className="text-lg font-medium font">{e.name}</p>
+                                <p className="text-lg font-extralight">{e.company}</p>
+
+                            </div>
                         </div>
                     )
                 })}

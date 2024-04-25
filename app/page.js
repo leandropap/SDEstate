@@ -11,8 +11,8 @@ export default function Home() {
     <main className="">
       <Banner />
 
-      <section id='cards' className='flex flex-col py-2 bg-sky-50'>
-        <p className='text-center text-xl py-4 underline'>Te mostramos algunas de nuestras propiedades</p>
+      <section id='cards' className='flex flex-col py-16 bg-sky-50'>
+        <p className='text-center text-4xl font-medium pb-8'>Te mostramos algunas de nuestras propiedades</p>
 
         <div className='flex flex-row justify-around'>
           <Card />
