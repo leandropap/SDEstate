@@ -35,9 +35,9 @@ export default function Card() {
                     <h1>{data.description}</h1>
                     <h1>{data.address}</h1>
                 </div>
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center font-medium">
                     <div className="mx-1 flex flex-col items-center">
-                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg" >
+                        <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg" >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6"></path>
                             <path d="M7 10m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
@@ -45,7 +45,7 @@ export default function Card() {
                         <p>{data.dorms}</p>
                     </div>
                     <div className="mx-1 flex flex-col items-center">
-                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                        <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-3a1 1 0 0 1 1 -1z"></path>
                             <path d="M6 12v-7a2 2 0 0 1 2 -2h3v2.25"></path>
@@ -55,7 +55,7 @@ export default function Card() {
                         <p>{data.baths}</p>
                     </div>
                     <div className="mx-1 flex flex-col items-center">
-                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                        <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M5 4h14a1 1 0 0 1 1 1v5a1 1 0 0 1 -1 1h-7a1 1 0 0 0 -1 1v7a1 1 0 0 1 -1 1h-5a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1"></path>
                             <path d="M4 8l2 0"></path>
@@ -65,7 +65,7 @@ export default function Card() {
                             <path d="M12 4l0 3"></path>
                             <path d="M16 4l0 2"></path>
                         </svg>
-                        <p>{data.areaBuilt}</p>
+                        <p>{data.areaBuilt} m²</p>
                     </div>
                 </div>
             </Link>

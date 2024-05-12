@@ -1,18 +1,24 @@
 import Link from "next/link"
+import Logo from "./Logo"
 
 export default function Header() {
+    const bgLogo = '#e0f2fe'
 
     return (
-        <header className="flex flex-col bg-slate-100 mt-2 mx-4">
+        <header className="flex flex-col pt-2 px-4 -mb-4 bg-sky-100">
             <section className="flex flex-row justify-between">
-                <div className="flex items-center px-2  bg-sky-200">
-                    <Link href='/'>Placeholder del logo</Link>
+                <div className="flex items-center px-2 -mx-2 -my-14">
+                    <Link href='/'> <Logo bg={bgLogo} w={300} /> </Link>
                 </div>
 
-                <nav className="flex justify-end">
+                <nav className="flex justify-end items-center text-lg">
+                    <Link href='listings' className="p-2 hover:font-medium hover:underline">
+                        Propiedades
+                        <div className="hover:tra"></div>
+                    </Link>
                     <Link href="/contact" className="p-2 hover:font-medium hover:underline"> Contacto </Link>
                     <Link href="/login" className="p-2 hover:font-medium hover:underline"> Iniciar sesion </Link>
-                    <button className="bg-sky-200 px-2 py-2 border border-black rounded-md hover:font-medium hover:underline">
+                    <button className="bg-gray-200 px-2 py-2 border border-black rounded-md hover:font-medium hover:underline">
                         <Link href="/publish"> Publicar propiedad </Link>
                     </button>
                 </nav>
