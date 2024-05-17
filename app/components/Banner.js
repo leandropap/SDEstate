@@ -6,7 +6,7 @@ export default function Banner() {
     const src2 = 'https://media.istockphoto.com/id/1332358775/photo/young-couple-shaking-hands-deal-contract-real-estate-investment-business-agreement-agent.jpg?s=612x612&w=0&k=20&c=tADtuQ9F_eKe_hMH0k5Ldg7N4p5BojisWf2n-jXar_I='
 
     return (
-        <section id="banner" className="relative px-8 py-2 overflow-hidden flex flex-row items-center justify-around">
+        <section id="banner" className="relative px-8 py-8 overflow-hidden flex flex-row items-center justify-around">
             <SearchBar />
             <div>
                 <div className=" relative z-10 flex justify-end ml-4">
@@ -20,7 +20,7 @@ export default function Banner() {
                         ¡Empecemos a encontrar tu próximo hogar juntos en SDEstate!
                     </p>
                 </div>
-                <Image loader={() => src} src={src} fill="true" objectFit="cover" className="relative overflow-hidden z-0" />
+                <Image loader={() => src} src={src} fill="true" objectFit="cover" className="relative overflow-hidden z-0" unoptimized={true} />
             </div>
         </section>
     )

@@ -4,13 +4,13 @@ export default function SearchBar() {
 
     return (
         <section id="search-bar" className="relative justify-center z-10 text-lg -ml-4 ">
-            <div className="border border-black rounded-xl py-4 px-6  bg-gray-300 bg-opacity-80 backdrop-blur-lg">
-                <div >
-                    <ul className="flex flex-row pb-2 ">
-                        <li className="py-1 px-2 mr-2  bg-sky-200 border border-black rounded-md hover:font-medium hover:underline">Alquilar</li>
-                        <li className="px-2 py-1 bg-sky-200 border border-black rounded-md hover:font-medium hover:underline">Comprar</li>
-                    </ul>
-                </div>
+            <div className="relative border-l border-r border-t border-black rounded-t-xl pt-4 px-6 z-50 max-w-fit bg-gray-300 bg-opacity-80 backdrop-blur-lg">
+                <ul className="flex flex-row pb-2 ">
+                    <button className="py-1 px-2 mr-2  bg-sky-200 border border-black rounded-md hover:font-medium hover:underline">Alquilar</button>
+                    <button className="px-2 py-1 bg-sky-200 border border-black rounded-md hover:font-medium hover:underline">Comprar</button>
+                </ul>
+            </div>
+            <div className="relative border-l border-r border-b border-black rounded-b-xl rounded-e-xl py-4 px-6 z-20 bg-gray-300 bg-opacity-80 backdrop-blur-lg">
                 <div className="flex flex-row justify-center">
                     <form className="py-1 px-2 bg-sky-200 border border-black mr-4 rounded-md">
                         <label className="relative">

@@ -5,9 +5,9 @@ export default function Header() {
     const bgLogo = '#e0f2fe'
 
     return (
-        <header className="flex flex-col pt-2 px-4 -mb-4 bg-sky-100">
-            <section className="flex flex-row justify-between">
-                <div className="flex items-center px-2 -mx-2 -my-14">
+        <header className="flex flex-col px-4 py-4 bg-sky-100">
+            <section className="flex flex-row justify-between items-center">
+                <div className="flex items-center px-2 -mx-2 -my-10">
                     <Link href='/'> <Logo bg={bgLogo} w={300} /> </Link>
                 </div>
 
@@ -23,7 +23,6 @@ export default function Header() {
                     </button>
                 </nav>
             </section>
-            <br />
         </header>
     )
 }
