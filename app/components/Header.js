@@ -18,7 +18,7 @@ export default function Header() {
                     </Link>
                     <Link href="/contact" className="p-2 hover:font-medium hover:underline"> Contacto </Link>
                     <Link href="/login" className="p-2 hover:font-medium hover:underline"> Iniciar sesion </Link>
-                    <button className="bg-gray-200 px-2 py-2 border border-black rounded-md hover:font-medium hover:underline">
+                    <button className="bg-gray-200 px-2 py-2 border border-black rounded-md hover:font-medium hover:underline hover:scale-105 hover:bg-orange-200 duration-200">
                         <Link href="/publish"> Publicar propiedad </Link>
                     </button>
                 </nav>

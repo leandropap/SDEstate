@@ -3,7 +3,6 @@
 import Card from './components/Card'
 import Banner from './components/Banner'
 import Testimonials from './components/Testimonials'
-import About from './components/About'
 
 
 export default function Home() {
