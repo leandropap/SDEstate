@@ -1,0 +1,436 @@
+{
+    "properties": [
+        {
+            "id": 1,
+            "address": "Avellaneda 224, Barrio Centro",
+            "city": "Santiago del Estero",
+            "price": 75000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 80,
+            "surface_covered_sqm": 70,
+            "floors": 1,
+            "location": {
+                "lat": -27.784,
+                "lng": -64.264
+            },
+            "amenities": [
+                "Cochera",
+                "Piscina",
+                "Gimnasio"
+            ],
+            "description": "Departamento céntrico, ideal para parejas o familias pequeñas. Ubicado en un edificio moderno, cuenta con una cochera privada, acceso a una piscina comunitaria y un gimnasio completamente equipado. Los dormitorios son amplios y luminosos, y la cocina está integrada al living comedor, ofreciendo un espacio cómodo y funcional. La ubicación es excelente, con acceso cercano a tiendas, restaurantes y transporte público.",
+            "contact": {
+                "name": "Inmobiliaria Centro",
+                "phone": "+54 385 123-4567",
+                "email": "contacto@inmobiliariacentro.com"
+            }
+        },
+        {
+            "id": 2,
+            "address": "Av. Libertad 456, Barrio Centro",
+            "city": "Santiago del Estero",
+            "price": 120000,
+            "property_type": "Departamento",
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "surface_total_sqm": 200,
+            "surface_covered_sqm": 150,
+            "floors": 1,
+            "location": {
+                "lat": -27.781,
+                "lng": -64.255
+            },
+            "amenities": [
+                "Jardín",
+                "Cochera",
+                "Quincho"
+            ],
+            "description": "Casa espaciosa con gran jardín y quincho para reuniones familiares. La propiedad se distribuye en dos plantas, con un amplio salón en la planta baja y una cocina moderna con acceso directo al jardín. En el exterior, el jardín ofrece un espacio verde perfecto para niños y mascotas, y el quincho está equipado para disfrutar de asados y eventos sociales. La ubicación en Barrio Norte es tranquila y segura, cercana a colegios y centros comerciales.",
+            "contact": {
+                "name": "Inmobiliaria Norte",
+                "phone": "+54 385 234-5678",
+                "email": "ventas@inmobiliarianorte.com"
+            }
+        },
+        {
+            "id": 3,
+            "address": "Av. Independecia 1789, Barrio Belgrano",
+            "city": "Santiago del Estero",
+            "price": 90000,
+            "property_type": "Departamento",
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "surface_total_sqm": 120,
+            "surface_covered_sqm": 100,
+            "floors": 1,
+            "location": {
+                "lat": -27.789,
+                "lng": -64.266
+            },
+            "amenities": [
+                "Ascensor",
+                "Seguridad 24h",
+                "Balcón"
+            ],
+            "description": "Departamento amplio con vista a la ciudad, en edificio con seguridad 24 horas. Este departamento de tres dormitorios ofrece un diseño moderno y funcional, con un amplio balcón que permite disfrutar de la vista urbana. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y los baños son espaciosos y modernos. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur",
+                "phone": "+54 385 345-6789",
+                "email": "info@inmobiliariasur.com"
+            }
+        },
+        {
+            "id": 4,
+            "address": "Ruta Nacional 9, Km 1123",
+            "city": "El Zanjon",
+            "price": 250000,
+            "property_type": "Finca",
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "surface_total_sqm": 5000,
+            "surface_covered_sqm": 300,
+            "floors": 1,
+            "location": {
+                "lat": -27.798,
+                "lng": -64.281
+            },
+            "amenities": [
+                "Piscina",
+                "Parque",
+                "Casa de huéspedes"
+            ],
+            "description": "Quinta de lujo con amplio terreno, piscina y casa de huéspedes. Esta impresionante propiedad ofrece un entorno natural inigualable, con un extenso parque ideal para actividades al aire libre. La casa principal es espaciosa y elegante, con acabados de alta calidad y amplios ventanales que permiten una excelente iluminación natural. Además, cuenta con una casa de huéspedes completamente equipada, perfecta para visitas o como espacio adicional para la familia. La piscina es el lugar ideal para relajarse durante los calurosos días de verano.",
+            "contact": {
+                "name": "Inmobiliaria Campo",
+                "phone": "+54 385 456-7890",
+                "email": "ventas@inmobiliariacampo.com"
+            }
+        },
+        {
+            "id": 5,
+            "address": "Saenz Peña 134, Barrio Centro",
+            "city": "La Banda",
+            "price": 85000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 2,
+            "surface_total_sqm": 90,
+            "surface_covered_sqm": 80,
+            "floors": 1,
+            "location": {
+                "lat": -27.785,
+                "lng": -64.265
+            },
+            "amenities": [
+                "Cochera",
+                "Gimnasio",
+                "Sala de juegos"
+            ],
+            "description": "Moderno departamento en el centro de la ciudad, ideal para familias pequeñas o profesionales. El edificio cuenta con una cochera privada, gimnasio y sala de juegos. Los dos dormitorios son espaciosos y la cocina está completamente equipada con electrodomésticos de alta gama. La sala de estar es luminosa y tiene acceso a un pequeño balcón. La ubicación es perfecta, con acceso a tiendas, restaurantes y transporte público.",
+            "contact": {
+                "name": "Inmobiliaria Centro Plus",
+                "phone": "+54 385 123-4568",
+                "email": "contacto@inmobiliariacentroplus.com"
+            }
+        },
+        {
+            "id": 6,
+            "address": "Amadeo Jacques 251, Barrio San Martin",
+            "city": "La Banda",
+            "price": 135000,
+            "property_type": "Casa",
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "surface_total_sqm": 250,
+            "surface_covered_sqm": 200,
+            "floors": 2,
+            "location": {
+                "lat": -27.780,
+                "lng": -64.256
+            },
+            "amenities": [
+                "Jardín",
+                "Cochera doble",
+                "Terraza"
+            ],
+            "description": "Amplia casa de dos plantas con jardín y terraza en el exclusivo Barrio Norte. La propiedad cuenta con una cochera doble y un jardín trasero ideal para actividades al aire libre. La planta baja tiene una sala de estar espaciosa, cocina moderna y comedor, mientras que en la planta alta se encuentran los cuatro dormitorios y dos baños completos. La terraza ofrece una excelente vista y es perfecta para reuniones sociales.",
+            "contact": {
+                "name": "Inmobiliaria Norte Premium",
+                "phone": "+54 385 234-5679",
+                "email": "ventas@inmobiliarianortepremium.com"
+            }
+        },
+        {
+            "id": 7,
+            "address": "Parana 489, Barrio Centenario",
+            "city": "Santiago del Estero",
+            "price": 95000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 85,
+            "surface_covered_sqm": 75,
+            "floors": 1,
+            "location": {
+                "lat": -27.788,
+                "lng": -64.267
+            },
+            "amenities": [
+                "Ascensor",
+                "Seguridad 24h",
+                "Patio"
+            ],
+            "description": "Departamento moderno con patio privado en Barrio Centenario. Este departamento de dos dormitorios ofrece un diseño moderno y funcional, con un amplio patio que permite disfrutar de actividades al aire libre. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y el baño es espacioso y moderno. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur Plus",
+                "phone": "+54 385 345-6790",
+                "email": "info@inmobiliariasurplus.com"
+            }
+        },
+        {
+            "id": 8,
+            "address": "Alem 482, Barrio Alberdi",
+            "city": "Santiago del Estero",
+            "price": 95000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 85,
+            "surface_covered_sqm": 75,
+            "floors": 1,
+            "location": {
+                "lat": -27.788,
+                "lng": -64.267
+            },
+            "amenities": [
+                "Ascensor",
+                "Seguridad 24h",
+                "Patio"
+            ],
+            "description": "Departamento moderno con patio privado en Barrio Alberdi. Este departamento de dos dormitorios ofrece un diseño moderno y funcional, con un amplio patio que permite disfrutar de actividades al aire libre. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y el baño es espacioso y moderno. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur Plus",
+                "phone": "+54 385 345-6790",
+                "email": "info@inmobiliariasurplus.com"
+            }
+        },
+        {
+            "id": 9,
+            "address": "Calle 456, Barrio Sur",
+            "city": "Santiago del Estero",
+            "price": 95000,
+            "property_type": "Casa",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 140,
+            "surface_covered_sqm": 200,
+            "floors": 2,
+            "location": {
+                "lat": -27.788,
+                "lng": -64.267
+            },
+            "amenities": [
+                "Cochera",
+                "Gimnasio",
+                "Patio"
+            ],
+            "description": "Departamento moderno con patio privado en Barrio Sur. Este departamento de dos dormitorios ofrece un diseño moderno y funcional, con un amplio patio que permite disfrutar de actividades al aire libre. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y el baño es espacioso y moderno. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur Plus",
+                "phone": "+54 385 345-6790",
+                "email": "info@inmobiliariasurplus.com"
+            }
+        },
+        {
+            "id": 10,
+            "address": "Calle 456, Barrio Sur",
+            "city": "Santiago del Estero",
+            "price": 95000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 85,
+            "surface_covered_sqm": 75,
+            "floors": 1,
+            "location": {
+                "lat": -27.788,
+                "lng": -64.267
+            },
+            "amenities": [
+                "Ascensor",
+                "Seguridad 24h",
+                "Patio"
+            ],
+            "description": "Departamento moderno con patio privado en Barrio Sur. Este departamento de dos dormitorios ofrece un diseño moderno y funcional, con un amplio patio que permite disfrutar de actividades al aire libre. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y el baño es espacioso y moderno. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur Plus",
+                "phone": "+54 385 345-6790",
+                "email": "info@inmobiliariasurplus.com"
+            }
+        },
+        {
+            "id": 11,
+            "address": "Calle 456, Barrio Sur",
+            "city": "Santiago del Estero",
+            "price": 95000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 85,
+            "surface_covered_sqm": 75,
+            "floors": 1,
+            "location": {
+                "lat": -27.788,
+                "lng": -64.267
+            },
+            "amenities": [
+                "Ascensor",
+                "Seguridad 24h",
+                "Patio"
+            ],
+            "description": "Departamento moderno con patio privado en Barrio Sur. Este departamento de dos dormitorios ofrece un diseño moderno y funcional, con un amplio patio que permite disfrutar de actividades al aire libre. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y el baño es espacioso y moderno. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur Plus",
+                "phone": "+54 385 345-6790",
+                "email": "info@inmobiliariasurplus.com"
+            }
+        },
+        {
+            "id": 12,
+            "address": "Calle 456, Barrio Sur",
+            "city": "Santiago del Estero",
+            "price": 95000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 85,
+            "surface_covered_sqm": 75,
+            "floors": 1,
+            "location": {
+                "lat": -27.788,
+                "lng": -64.267
+            },
+            "amenities": [
+                "Ascensor",
+                "Seguridad 24h",
+                "Patio"
+            ],
+            "description": "Departamento moderno con patio privado en Barrio Sur. Este departamento de dos dormitorios ofrece un diseño moderno y funcional, con un amplio patio que permite disfrutar de actividades al aire libre. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y el baño es espacioso y moderno. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur Plus",
+                "phone": "+54 385 345-6790",
+                "email": "info@inmobiliariasurplus.com"
+            }
+        },
+        {
+            "id": 13,
+            "address": "Calle 456, Barrio Sur",
+            "city": "Santiago del Estero",
+            "price": 95000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 85,
+            "surface_covered_sqm": 75,
+            "floors": 1,
+            "location": {
+                "lat": -27.788,
+                "lng": -64.267
+            },
+            "amenities": [
+                "Ascensor",
+                "Seguridad 24h",
+                "Patio"
+            ],
+            "description": "Departamento moderno con patio privado en Barrio Sur. Este departamento de dos dormitorios ofrece un diseño moderno y funcional, con un amplio patio que permite disfrutar de actividades al aire libre. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y el baño es espacioso y moderno. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur Plus",
+                "phone": "+54 385 345-6790",
+                "email": "info@inmobiliariasurplus.com"
+            }
+        },
+        {
+            "id": 14,
+            "address": "Calle 456, Barrio Sur",
+            "city": "Santiago del Estero",
+            "price": 95000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 85,
+            "surface_covered_sqm": 75,
+            "floors": 1,
+            "location": {
+                "lat": -27.788,
+                "lng": -64.267
+            },
+            "amenities": [
+                "Ascensor",
+                "Seguridad 24h",
+                "Patio"
+            ],
+            "description": "Departamento moderno con patio privado en Barrio Sur. Este departamento de dos dormitorios ofrece un diseño moderno y funcional, con un amplio patio que permite disfrutar de actividades al aire libre. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y el baño es espacioso y moderno. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur Plus",
+                "phone": "+54 385 345-6790",
+                "email": "info@inmobiliariasurplus.com"
+            }
+        },
+        {
+            "id": 15,
+            "address": "Calle 456, Barrio Sur",
+            "city": "Santiago del Estero",
+            "price": 95000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 85,
+            "surface_covered_sqm": 75,
+            "floors": 1,
+            "location": {
+                "lat": -27.788,
+                "lng": -64.267
+            },
+            "amenities": [
+                "Ascensor",
+                "Seguridad 24h",
+                "Patio"
+            ],
+            "description": "Departamento moderno con patio privado en Barrio Sur. Este departamento de dos dormitorios ofrece un diseño moderno y funcional, con un amplio patio que permite disfrutar de actividades al aire libre. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y el baño es espacioso y moderno. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur Plus",
+                "phone": "+54 385 345-6790",
+                "email": "info@inmobiliariasurplus.com"
+            }
+        },
+        {
+            "id": 16,
+            "address": "Calle 456, Barrio Sur",
+            "city": "Santiago del Estero",
+            "price": 95000,
+            "property_type": "Departamento",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "surface_total_sqm": 85,
+            "surface_covered_sqm": 75,
+            "floors": 1,
+            "location": {
+                "lat": -27.788,
+                "lng": -64.267
+            },
+            "amenities": [
+                "Ascensor",
+                "Seguridad 24h",
+                "Patio"
+            ],
+            "description": "Departamento moderno con patio privado en Barrio Sur. Este departamento de dos dormitorios ofrece un diseño moderno y funcional, con un amplio patio que permite disfrutar de actividades al aire libre. El edificio cuenta con ascensor y seguridad las 24 horas, brindando tranquilidad y comodidad. La cocina está equipada con electrodomésticos de última generación y el baño es espacioso y moderno. Ubicado en un barrio con todos los servicios a mano.",
+            "contact": {
+                "name": "Inmobiliaria Sur Plus",
+                "phone": "+54 385 345-6790",
+                "email": "info@inmobiliariasurplus.com"
+            }
+        }
+    ]
+}

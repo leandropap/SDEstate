@@ -1,17 +1,20 @@
 'use client'
 
 import Image from "next/image"
-import Maps from "../components/Maps"
-import MyBar from "../components/MyBar"
-import Contact from "../components/Contact"
+import Maps from "../../components/Maps"
+import MyBar from "../../components/MyBar"
+import Contact from "../../components/Contact"
+import { useAppContext } from "@/app/context"
 
-
-export default function Property() {
+export default function Property({ params }) {
     const src = 'https://ap.rdcpix.com/ba90d46414debbf5c9f60f7b6cee5744l-m305062379od-w480_h360.jpg'
+    const { state } = useAppContext()
+    const data = (state.allProperties.filter(e => e.id == params.id))[0]
+    console.log(data)
 
     return (
         <div className="my-2">
-            <div className="">
+            <div>
                 <MyBar />
                 <section id='photos' className="flex flex-row mx-2 cursor-pointer">
                     <div className=" rounded-xl overflow-hidden">
@@ -43,31 +46,27 @@ export default function Property() {
                     <div className="flex flex-row text-sm p-4 m-4 text-center font-semibold border-y-2 border-gray-200" >
                         <div className="pr-6">
                             <span class="iconify mdi--home-roof" style={{ width: 48, height: 48 }} />
-                            <p>2 plantas</p>
+                            <p>{data.floors} plantas</p>
                         </div>
                         <div className="px-6">
                             <span class="iconify mdi--ruler-square" style={{ width: 48, height: 48 }} />
-                            <p>2 plantas</p>
+                            <p>{data.surface_total_sqm} m2 <br /> terreno</p>
                         </div>
                         <div className="px-6">
                             <span class="iconify mdi--surface-area" style={{ width: 48, height: 48 }} />
-                            <p>2 plantas</p>
+                            <p>{data.surface_covered_sqm} m2 <br /> cubiertos</p>
                         </div>
                         <div className="px-6">
                             <span class="iconify mdi--door-open" style={{ width: 48, height: 48 }} />
-                            <p>2 plantas</p>
+                            <p>{data.bedrooms + data.bathrooms + 1} ambientes</p>
                         </div>
                         <div className="px-6">
                             <span class="iconify mdi--bed" style={{ width: 48, height: 48 }} />
-                            <p>2 plantas</p>
+                            <p>{data.bedrooms} habitaciones</p>
                         </div>
                         <div className="px-6">
                             <span class="iconify mdi--bathtub" style={{ width: 48, height: 48 }} />
-                            <p>2 plantas</p>
-                        </div>
-                        <div className="px-6">
-                            <span class="iconify mdi--bathroom-tissue" style={{ width: 48, height: 48 }} />
-                            <p>2 plantas</p>
+                            <p>{data.bathrooms} baños</p>
                         </div>
                         <div className="px-6">
                             <span class="iconify mdi--garage-open-variant" style={{ width: 48, height: 48 }} />
@@ -75,13 +74,15 @@ export default function Property() {
                         </div>
                     </div>
                     <p className="text-3xl font-semibold">Nombre de la propiedad</p>
-                    <p>
-                        Ubicacion: Misiones 567 - Entre Maipu y Formosa - Barrio Centenario <br />
-                        Dos plantas, 4 dormitorios, living, comedor, cocina, escritorio, garage para dos autos, 4 baños (uno en suite), quincho con asador y piscina, frente al norte
+                    <p className="text-justify text-lg">
+                        <b> Ubicacion: {data.address}, {data.city} </b>
+                        <br />
+                        <hr />
+                        {data.description}
                     </p>
-                    <div className="flex flex-row items-center py-4 font-medium">
-                        <span class="iconify mdi--money" style={{ width: 48, height: 48 }} />
-                        <p>USD 50.000</p>
+                    <div className="flex flex-row items-center py-4 font-medium text-3xl">
+                        <span class="iconify mdi--money" style={{ width: 60, height: 60 }} />
+                        <p>U$D {data.price}</p>
                     </div>
                 </section>
             </div>

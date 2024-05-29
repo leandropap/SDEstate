@@ -1,26 +1,16 @@
 'use client'
-
-import Card from './components/Card'
+import Cards from './components/Cards'
 import Banner from './components/Banner'
 import Testimonials from './components/Testimonials'
 
-
 export default function Home() {
+
   return (
     <main className="">
       <Banner />
 
-      <section id='cards' className='flex flex-col py-16 bg-sky-50'>
-        <p className='text-center text-4xl font-medium pb-8'>Te mostramos algunas de nuestras propiedades</p>
-
-        <div className='flex flex-row justify-around'>
-          <Card />
-          <Card />
-          <Card />
-        </div>
-      </section>
+      <Cards />
       <Testimonials />
-
     </main>
   )
 }
