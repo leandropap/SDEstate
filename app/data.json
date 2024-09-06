@@ -1,5 +1,5 @@
 {
-    "properties": [
+    "listings": [
         {
             "id": 1,
             "address": "Avellaneda 224, Barrio Centro",
@@ -431,6 +431,44 @@
                 "phone": "+54 385 345-6790",
                 "email": "info@inmobiliariasurplus.com"
             }
+        }
+    ],
+    "testimonials": [
+        {
+            "name": "Emir Dalale",
+            "company": "MercaLibre",
+            "src": "https://casaz.vercel.app/agents/agent-4.jpeg",
+            "text": "Gracias a SDEstate, mi primera mudanza fuera de casa fue muy simple. Me ofrecieron un gran abanico de opciones, y encontre el lugar indicado para mi"
+        },
+        {
+            "name": "Eduardo Vizcarra",
+            "company": "Marihuanos anonimos",
+            "src": "https://casaz.vercel.app/agents/agent-3.jpeg",
+            "text": "Antes, cobrar los alquileres de mis propiedades era muy complicado. Hoy por hoy, SDEstate se encarga de la gestion y asi yo puedo disfrutar de mi  tiempo libre"
+        },
+        {
+            "name": "Gonzalo Umlandt",
+            "company": "Es Ketchup",
+            "src": "https://t4.ftcdn.net/jpg/01/27/97/23/360_F_127972340_IdaSXaA5FRMHpwtANA2FZfqnnATi8leG.jpg",
+            "text": "Desde hace mucho tiempo, planeaba mudarme una vez que me jubile y SDEstate fue crucial tanto para la compra como para la venta de ambas propiedades"
+        },
+        {
+            "name": "Emanuel Sily",
+            "company": "1LED",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-0tkxAziZUn9x9th8FRvztBQBFxXKTOHvg&s",
+            "text": "Con SDEstate no solo pude vender mi casa, si no tambien encontrar un nuevo departamento donde puedo desarrollar al maximo mis poderes sexuales. "
+        },
+        {
+            "name": "Cheto Chochin",
+            "company": "AFJP",
+            "src": "https://headshots-inc.com/wp-content/uploads/2023/03/Corporate-Headshot-Example-2-1.jpg",
+            "text": "Vivo en el exterior, pero tengo varias propiedades en SDE. Gracias a SDEstate puedo alquilarlas y asi evito que mi hijo usurpe alguna de ellas."
+        },
+        {
+            "name": "Alvaro Martinez",
+            "company": "Sector 7G",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSczz-jt5t0-wtBdJSjKyaiIS_G3B_OOe8NJw&s",
+            "text": "Volví de la universidad y no tenia donde ir, mis padres ya no me recibian. Luego de un par de clicks en SDEstate, tenia varias opciones listas para mi. "
         }
     ]
 }

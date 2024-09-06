@@ -1,13 +1,11 @@
 'use client'
 import { createContext, useState, useContext } from "react";
-import { randArray } from "../helpers";
-import { properties } from '../data.json'
+import { listings } from '../data.json'
 const AppContext = createContext()
 
 export function AppWrapper({ children }) {
     const [state, setState] = useState({
-        cardsProperties: randArray,
-        allProperties: properties
+        allListings: listings
     })
 
     return (

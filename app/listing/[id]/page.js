@@ -9,7 +9,7 @@ import { useAppContext } from "@/app/context"
 export default function Property({ params }) {
     const src = 'https://ap.rdcpix.com/ba90d46414debbf5c9f60f7b6cee5744l-m305062379od-w480_h360.jpg'
     const { state } = useAppContext()
-    const data = (state.allProperties.filter(e => e.id == params.id))[0]
+    const data = (state.allListings.filter(e => e.id == params.id))[0]
     console.log(data)
 
     return (

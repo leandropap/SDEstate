@@ -18,7 +18,7 @@ export default function Card(props) {
                 <h1 className="bg-sky-50 z-10 -mb-6 absolute ml-1 mt-1 px-2 ">
                     Venta
                 </h1>
-                <Image loader={() => src} src={src} width={440} height={240} className="relative overflow-hidden" unoptimized={true} />
+                <Image loader={() => src} src={src} width={440} height={240} className="relative overflow-hidden" unoptimized={true} alt="" />
                 <div className="flex justify-end">
                     <h1 className="absolute z-10 -mt-7 pr-2 text-white text-xl ">USD {data.price}</h1>
                 </div>

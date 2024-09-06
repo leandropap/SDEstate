@@ -1,12 +1,16 @@
 'use client'
+import { useEffect, useState } from "react";
 import Card from "./Card";
 import Loading from "./Loading";
-import { useAppContext } from "../context";
+import { createRandArray } from "../helpers";
+import { listings } from '../data.json'
 
+export default function Cards() {
+    const [data, setData] = useState([])
 
-export default function Cards(props) {
-    const { state } = useAppContext()
-    const data = state.cardsProperties
+    useEffect(() => {
+        setData(createRandArray(listings))
+    }, [])
 
     return (
         <section id='cards' className='flex flex-col py-16 bg-sky-50'>
