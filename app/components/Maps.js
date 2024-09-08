@@ -5,7 +5,6 @@ import {
     APIProvider,
     Map,
     AdvancedMarker,
-    Pin,
     InfoWindow
 } from '@vis.gl/react-google-maps'
 

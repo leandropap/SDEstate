@@ -3,18 +3,18 @@ import { useEffect, useState } from "react";
 import Card from "./Card";
 import Loading from "./Loading";
 import { createRandArray } from "../helpers";
-import { listings } from '../data.json'
+import json from '../data.json'
 
 export default function Cards() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        setData(createRandArray(listings))
+        setData(createRandArray(json.listings))
     }, [])
 
     return (
-        <section id='cards' className='flex flex-col py-16 bg-sky-50'>
-            <p className='text-center text-4xl font-medium pb-8'>Te mostramos algunas de nuestras propiedades</p>
+        <section id='cards' className='flex flex-col py-8 bg-sky-50'>
+            <p className='text-center text-3xl font-medium pb-8'>Te mostramos algunas de nuestras propiedades</p>
             {data.length ?
                 <div className='flex flex-row justify-around'>
                     <Card data={data[0]} />

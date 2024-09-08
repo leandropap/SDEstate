@@ -8,7 +8,7 @@ export default function Banner() {
     return (
         <section id="banner" className="relative px-4 py-8 overflow-hidden flex flex-row items-center justify-around">
             <SearchBar />
-            <div className=" relative z-10 backdrop-blur-md  bg-white bg-opacity-50 max-w-lg py-4 px-6 rounded-2xl text-xl text-justify font-medium">
+            <div className=" relative z-10 backdrop-blur-md bg-white bg-opacity-50 max-w-lg py-4 px-6 rounded-2xl text-md text-justify  font-medium">
                 En <b>SDEstate</b>, estamos para hacer realidad tus sueños de hogar.
                 Ya sea que estés buscando comprar, vender o alquilar una propiedad, nuestro equipo experto está listo para ayudarte en cada paso del proceso.
                 <br />
@@ -17,7 +17,7 @@ export default function Banner() {
                 En <b>SDEstate</b>, estamos comprometidos con la excelencia en el servicio al cliente y en hacer que tu experiencia en bienes raíces sea fácil y satisfactoria.
                 <br />
                 <br />
-                <h1 className="font-semibold text-center"> ¡Encontrá tu próximo hogar juntos en SDEstate! </h1>
+                <h1 className="text-center"> <b>¡Encontrá tu próximo hogar juntos en SDEstate!</b> </h1>
             </div>
 
             <Image loader={() => src} src={src} fill="true" objectFit="cover" className="relative overflow-hidden z-0" unoptimized={true} />

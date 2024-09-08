@@ -5,14 +5,14 @@ export default function Header() {
     const bgLogo = '#e0f2fe'
 
     return (
-        <header className="flex flex-col px-4 py-4 bg-sky-100">
+        <header className="flex flex-col px-2 py-2 bg-sky-100">
             <section className="flex flex-row justify-between items-center">
                 <div className="flex items-center px-2 -mx-2 -my-10">
-                    <Link href='/'> <Logo bg={bgLogo} w={300} /> </Link>
+                    <Link href='/'> <Logo bg={bgLogo} w={240} /> </Link>
                 </div>
 
-                <nav className="flex justify-end items-center text-lg">
-                    <Link href='listings' className="p-2 hover:font-medium hover:underline">
+                <nav className="flex justify-end items-center text-md">
+                    <Link href='/allListings' className="p-2 hover:font-medium hover:underline">
                         Propiedades
                         <div className="hover:tra"></div>
                     </Link>

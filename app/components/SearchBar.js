@@ -3,7 +3,7 @@ export default function SearchBar() {
     const options = ['Casa', 'Departamento', 'Finca', 'Terreno', 'Oficina', 'Local Comercial', 'Galpón'];
 
     return (
-        <section id="search-bar" className="relative justify-center z-10 text-xl font-medium w-fit">
+        <section id="search-bar" className="relative justify-center z-10 text-md font-medium w-fit">
             <div className="relative rounded-t-xl pt-4 px-4 z-50 max-w-fit bg-gray-300 bg-opacity-80 backdrop-blur-lg">
                 <ul className="flex flex-row">
                     <button className="py-1 px-2 mr-2  bg-sky-200 duration-200 border border-black rounded-md hover:font-medium hover:underline hover:scale-105 focus:bg-orange-200 focus:scale-105 focus:underline">Alquilar</button>

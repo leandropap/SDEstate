@@ -14,7 +14,7 @@ export default function Card(props) {
 
     return (
         <section id="card" className=" mx-4 border border-gray-400 flex justify-center bg-white">
-            <Link href={`/property/${slug}`} >
+            <Link href={`/listing/${slug}`} >
                 <h1 className="bg-sky-50 z-10 -mb-6 absolute ml-1 mt-1 px-2 ">
                     Venta
                 </h1>

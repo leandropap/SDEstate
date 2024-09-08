@@ -1,16 +1,20 @@
 'use client'
-
+import { useEffect, useState } from "react"
+import { useAppContext } from "@/app/context"
 import Image from "next/image"
 import Maps from "../../components/Maps"
 import MyBar from "../../components/MyBar"
 import Contact from "../../components/Contact"
-import { useAppContext } from "@/app/context"
 
 export default function Property({ params }) {
     const src = 'https://ap.rdcpix.com/ba90d46414debbf5c9f60f7b6cee5744l-m305062379od-w480_h360.jpg'
     const { state } = useAppContext()
-    const data = (state.allListings.filter(e => e.id == params.id))[0]
-    console.log(data)
+    const [data, setData] = useState({})
+
+    useEffect(() => {
+        setData(state.allListings.filter(e => e.id == params.id)[0])
+        window.scrollTo(0, 0)
+    }, [params.id, state.allListings])
 
     return (
         <div className="my-2">
@@ -18,26 +22,26 @@ export default function Property({ params }) {
                 <MyBar />
                 <section id='photos' className="flex flex-row mx-2 cursor-pointer">
                     <div className=" rounded-xl overflow-hidden">
-                        <Image loader={() => src} src={src} width={640} height={480} style={{ objectFit: 'cover', width: '100%', height: '60vh' }}
+                        <Image loader={() => src} src={src} width={640} height={480} alt="" style={{ objectFit: 'cover', width: '100%', height: '60vh' }}
                             className="transition duration-300 ease-in-out hover:scale-105" />
                     </div>
                     <div className="flex flex-col justify-around mx-1 ">
                         <div className="mb-1 rounded-xl overflow-hidden" >
-                            <Image loader={() => src} src={src} width={400} height={300} style={{ objectFit: 'cover', width: '100%', height: '30vh' }}
+                            <Image loader={() => src} src={src} width={400} height={300} alt="" style={{ objectFit: 'cover', width: '100%', height: '30vh' }}
                                 className="transition duration-300 ease-in-out hover:scale-105" />
                         </div>
                         <div className="rounded-xl overflow-hidden" >
-                            <Image loader={() => src} src={src} width={400} height={300} style={{ objectFit: 'cover', width: '100%', height: '30vh' }}
+                            <Image loader={() => src} src={src} width={400} height={300} alt="" style={{ objectFit: 'cover', width: '100%', height: '30vh' }}
                                 className="transition duration-300 ease-in-out hover:scale-105" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-around ">
                         <div className="mb-1 rounded-xl overflow-hidden">
-                            <Image loader={() => src} src={src} width={400} height={300} style={{ objectFit: 'cover', width: '100%', height: '30vh' }}
+                            <Image loader={() => src} src={src} width={400} height={300} alt="" style={{ objectFit: 'cover', width: '100%', height: '30vh' }}
                                 className="transition duration-300 ease-in-out hover:scale-105" />
                         </div>
                         <div className="rounded-xl overflow-hidden">
-                            <Image loader={() => src} src={src} width={400} height={300} style={{ objectFit: 'cover', width: '100%', height: '30vh' }}
+                            <Image loader={() => src} src={src} width={400} height={300} alt="" style={{ objectFit: 'cover', width: '100%', height: '30vh' }}
                                 className="transition duration-300 ease-in-out hover:scale-105" />
                         </div>
                     </div>
@@ -77,7 +81,6 @@ export default function Property({ params }) {
                     <p className="text-justify text-lg">
                         <b> Ubicacion: {data.address}, {data.city} </b>
                         <br />
-                        <hr />
                         {data.description}
                     </p>
                     <div className="flex flex-row items-center py-4 font-medium text-3xl">

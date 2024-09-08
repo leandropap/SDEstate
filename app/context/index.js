@@ -1,11 +1,11 @@
 'use client'
 import { createContext, useState, useContext } from "react";
-import { listings } from '../data.json'
+import json from '../data.json'
 const AppContext = createContext()
 
 export function AppWrapper({ children }) {
     const [state, setState] = useState({
-        allListings: listings
+        allListings: json.listings
     })
 
     return (
