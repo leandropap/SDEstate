@@ -2,15 +2,15 @@
 import { useAppContext } from "@/app/context"
 import { useEffect, useState } from "react"
 import Card from "../components/Card"
-import Filter from "./Filter"
+import Dropdown from "./Dropdown"
 
 export default function AllListings() {
     const { state } = useAppContext()
     const [listings, setListings] = useState([])
 
     useEffect(() => {
-        setListings(state.allListings)
-    }, [state.allListings])
+        setListings(state.filteredListings)
+    }, [state])
 
     return (
         <div>
@@ -19,7 +19,7 @@ export default function AllListings() {
                     <b className="ml-6">Tenemos {listings.length} propiedades a tu disposición </b>
                     :
                     <b className="ml-6">Cargando...</b>}
-                <Filter />
+                <Dropdown />
             </div>
             <div className="flex flex-wrap justify-start">
                 {listings.map((e, i) => {
